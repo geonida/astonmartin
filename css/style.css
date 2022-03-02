@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima'), url('../font/OPTIMA.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Optima Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Italic'), url('../font/Optima_Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Optima Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Medium'), url('../font/Optima Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Optima Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('../font/OPTIMA_B.woff') format('woff');
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'optima',arial;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/mainBn.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 9999;
+}
+header{ 
+    position: relative;
+    z-index: 99;
+}
+.mainBn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.gnb{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.gnb li{
+    margin-bottom: 30px;
+}
+h1 img{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.a{
+    position: relative;
+}
+.a:before{
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #fff;
+}
+
+.a:hover:before{
+    width: 100%;
+    transition: all 1s;
+}
+
+header h2{
+    position: fixed;
+    right: 90px;
+    bottom: 100px;
+    color: #fff;
+    font-size: 30px;
+}
+header p{
+    position: fixed;
+    bottom: 30px;
+    right: 70px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: turquoise;
+    overflow: hidden;
+}
+
+
+.s1{
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.s1:before, .s2:before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    mix-blend-mode: soft-light;
+    opacity: 0.4;
+}
+
+
+main.DBX .s1:before, main.DBX .s2:before{
+    background-image: linear-gradient(to bottom, limegreen, orange);
+}
+
+main.DB11 .s1:before, main.DB11 .s2:before{
+    background-image: linear-gradient(to bottom, #ff08aa, darkviolet);
+}
+
+main.LAGONDA .s1:before, main.LAGONDA .s2:before{
+    background-image: linear-gradient(to bottom, orangered, teal);
+}
+
+main.VANQUISH .s1:before, main.VANQUISH .s2:before{
+    background-image: linear-gradient(to bottom, turquoise, orangered);
+}
+
+main.VANTAGE .s1:before, main.VANTAGE .s2:before{
+    background-image: linear-gradient(to bottom, navy, lightpink);
+}
+
+main.SUPERLEGGERA .s1:before, main.SUPERLEGGERA .s2:before{
+    background-image: linear-gradient(to bottom, powderblue, darkorchid);
+}
+
+.s1 .video{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.s1 .video1{
+    display: block;
+}
+.s1 video{
+    display: none;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.s1 .txt{
+    position: absolute;
+    left: 70%;
+    top: 30%;
+    z-index: 999;
+}
+
+.s1 .txt h3{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.s1 .txt p{
+    font-size: 24px;
+    margin-top: 40px;
+    color: #eee;
+    transition: all 0.5s;
+}
+
+.s1 .txt p:hover{
+    color: #fff;
+    transform: scale(1.5);
+}
+
+.s2{
+    width: 60%;
+    position: relative;
+}
+
+.s2 .image{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.s2 .img1{
+    display: block;
+}
+
+
+.s2 .more{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 22px;
+    font-family: arial;
+    border: 3px solid #ccc;
+    border-radius: 999px;
+    padding: 5px 25px;
+    z-index: 99;
+    font-weight: bold;
+}
+
+.s2 .more:hover{
+    background-color: #fff;
+    color: #333;
+    border-color: #fff;
+}
+
+
+.s2 .img1{
+    background-image: url(../images/1dbx`.png);
+}
+
+.s2 .img2{
+    background-image: url(../images/1db11.png);
+}
+
+.s2 .img3{
+    background-image: url(../images/1ragonda.jpg.png);
+}
+
+.s2 .img4{
+    background-image: url(../images/1Vanquish\ S.jpg.png);
+}
+
+.s2 .img5{
+    background-image: url(../images/1vantage.png);
+}
+
+.s2 .img6{
+    background-image: url(../images/1Superleggera1.jpg.png);
+}
